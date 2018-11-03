@@ -13,4 +13,4 @@ RUN apk del devs
 COPY ./Caddyfile /etc/Caddyfile
 
 EXPOSE 80 443 2015
-CMD ["caddy", "-quic", "--conf", "/etc/Caddyfile", "--log", "stdout", "--agree=true"]
+CMD ["caddy", "-quic", "--conf", "/etc/Caddyfile", "--agree=true"]
